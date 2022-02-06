@@ -27,6 +27,7 @@ public class GreetingServlet extends HttpServlet {
         out.println("Thread ID: "+Thread.currentThread().getId()+"<br>");
         contador++;
         out.println("Visits:"+contador+"<br>");
+
 }
 
     @Override
