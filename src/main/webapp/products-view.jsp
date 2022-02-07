@@ -1,3 +1,10 @@
+<%--
+  Created by IntelliJ IDEA.
+  User: uo276255
+  Date: 07/02/2022
+  Time: 9:33
+  To change this template use File | Settings | File Templates.
+--%>
 <%@ page import="com.uniovi.sdi.ProductsService" %>
 <%@ page import="com.uniovi.sdi.Product" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" pageEncoding="utf-8"%>
@@ -13,34 +20,6 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </head>
 <body>
-<!-- Contenido -->
-<jsp:useBean id="counter" class="com.uniovi.sdi.Counter" scope="application"/>
-<jsp:setProperty name="counter" property="increase" value="1"/>
-
-<!-- Barra de Navegación superior -->
-<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-    <div class="collapse navbar-collapse" id="my-navbarColor02">
-        <ul class="navbar-nav mr-auto">
-            <li class="nav-item ">
-                <a class="nav-link" href="AddToShoppingCart">Carrito<span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item ">
-                <a class="nav-link" href="login.jsp">Login<span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item ">
-                <a class="nav-link" href="admin.jsp">Administrar productos<span class="sr-only">(current)</span></a>
-            </li>
-            <li class = "nav-item ">
-                <a class = "nav-link" href = "products-view.jsp"> Productos<span class="sr-only">(current)</span></a>
-            </li>
-        </ul>
-        <div class="nav navbar-right">
-            <%-- <%=counter%>Visitas --%>
-            <jsp:getProperty name="counter" property="total"/> Visitas
-        </div>
-    </div>
-</nav>
-<!-- Contenido -->
 <div class="container" id="main-container">
     <h2>Productos</h2>
     <div class="row ">

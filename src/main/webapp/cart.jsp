@@ -1,5 +1,6 @@
-<%@ page contentType="text/html;charset=UTF-8" language="java" pageEncoding="utf-8" %>
+<%@ page contentType="text/html;charset=UTF-8" language="java" pageEncoding="utf-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ page language="java" import="com.uniovi.sdi.* , java.util.List"%>
 <html lang="en">
 <head>
     <title>Vista carrito</title>
@@ -13,6 +14,7 @@
 <body>
 <jsp:useBean id="counter" class="com.uniovi.sdi.Counter" scope="application"/>
 <jsp:setProperty name="counter" property="increase" value="1"/>
+
 <!-- Barra de Navegación superior -->
 <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
     <div class="container-fluid">
